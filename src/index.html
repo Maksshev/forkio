@@ -2,228 +2,237 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
-		<div class="container header__navbar">
-			<!-- display:block; -->
+		<div class="container header-navbar">
 			<a class="logo">
-				<img class="logo__img" src="" alt="">
-				<div class="logo__text"></div>
-
+				<img class="logo__img" src="img/Logo.png" alt="logo">
+				<span class="logo__text">FORKIO</span>
 			</a>	
+			<a href="#" class="btn-buy">Buy Now</a>
 			<div class="header__navbar-nav">
 				<div class="toggle-navbar">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
+					<span class="toggle-navbar__line toggle-navbar__line--short"></span>
+					<span class="toggle-navbar__line"></span>
+					<span class="toggle-navbar__line"></span>
 				</div>
-				<ul class="header__navbar-nav-menu">
-					<li class="header__navbar-nav-menu-item"></li>
-					<li class="header__navbar-nav-menu-item"></li>
-					<li class="header__navbar-nav-menu-item"></li>
-					<li class="header__navbar-nav-menu-item"></li>
+				<ul class="nav-menu">
+					<li class="nav-menu__item">
+						<a class="nav-menu__link" href="#">Home</a>
+					</li>
+					<li class="nav-menu__item">Overview</li>
+					<li class="nav-menu__item">About Fork</li>
+					<li class="nav-menu__item">Buying Options</li>
+					<li class="nav-menu__item">Support</li>
 				</ul>
 			</div>
-				<!-- mixin -->
-			<button class="button-purple header__button"></button>
+				
 		</div>
 	</header>
 	<section class="section-fork">
-		<div class="container section-fork__container">
-			<h1 class="section-fork__text-1"></h1>
-			<h2 class="section-fork__text-2"></h2>
-			<p  class="section-fork__text-3"></p>
+		<div class="container">
+			<h1 class="section-fork__heading"></h1>
+			<h2 class="section-fork__slogan"></h2>
+			<p  class="section-fork__desc"></p>
+		</div>			
+		<div class="download-b">
+				<a class="download-b__btn"></a>
+				<p class="download-b__text"></p>
 		</div>
 	</section>
 
 	<section class="revolutionary">
 		<div class="container revolutionary__container">
-			<div class="revolutionary__download">
-				<button class="button-purple revolutionary__download-button"></button>
-				<div class="revolutionary__download-text"></div>
+
+			<div class="section-title">
+				<h2 class="section-title__heading"></h2>
+				<p class="section-title__text"></p>
 			</div>
-			<div class="revolutionary__content">
-				<div class="revolutionary__content-heading"></div>
-				<div class="revolutionary__content-text"></div>
-			</div>
-			<div class="revolutionary__buttons">
-				<button class="revolutionary__buttons-button"></button>
-				<button class="revolutionary__buttons-button"></button>
-				<button class="revolutionary__buttons-button"></button>
+			<div class="github-icons">
+				<div class="github-icons-work">
+					<a class="github-icons-work__icon" href=""></a>
+					<a class="github-icons-work__counter" href=""></a>
+				</div>
+				<div>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+
 			</div>
 		</div>
 	</section>
 
 	<section class="get">
 		<div class="container get__container">
-			<!-- h2 -->
-			<div class="get__heading"></div>
+			<h2 class="section-title-dark"></h2>
 
-			<div class="get__columns-wrapper">
-				<div class="get__columns-wrapper-items">
+			<div class="preference-content">
+				<div class="preference-list">
 
-					<div class="get__columns-wrapper-item">
-						<div class="get__columns-wrapper-item-img"></div>
-						<!-- h3 -->
-						<div class="get__columns-wrapper-item-heading"></div>
-						<!-- p -->
-						<div class="get__columns-wrapper-item-text"></div>
+					<div class="preference-item">
+						<div class="preference-item__img"></div>
+						<h3 class="preference-item__heading"></h3>
+						<p class="preference-item__text"></p>
 					</div>
 
-					<div class="get__columns-wrapper-item">
-						<div class="get__columns-wrapper-item-img"></div>
-						<div class="get__columns-wrapper-item-heading"></div>
-						<div class="get__columns-wrapper-item-text"></div>
+					<div class="preference-item">
+						<div class="preference-item__img"></div>
+						<h3 class="preference-item__heading"></h3>
+						<p class="preference-item__text"></p>
 					</div>
 
-					<div class="get__columns-wrapper-item">
-						<div class="get__columns-wrapper-item-img"></div>
-						<div class="get__columns-wrapper-item-heading"></div>
-						<div class="get__columns-wrapper-item-text"></div>
+					<div class="preference-item">
+						<div class="preference-item__img"></div>
+						<h3 class="preference-item__heading"></h3>
+						<p class="preference-item__text"></p>
 					</div>
 
-					<div class="get__columns-wrapper-item">
-						<div class="get__columns-wrapper-item-img"></div>
-						<div class="get__columns-wrapper-item-heading"></div>
-						<div class="get__columns-wrapper-item-text"></div>
+					<div class="preference-item">
+						<div class="preference-item__img"></div>
+						<h3 class="preference-item__heading"></h3>
+						<p class="preference-item__text"></p>
 					</div>
 
 				</div>
-				<div class="get__columns-wrapper-img"></div>
+				<div class="preference-image"></div>
 			</div>
 		</div>
 	</section>
 
 	<section class="social">
-		<div class="container social__container">
+		<div class="container">
 			<div class="carousel">
-				<div class="carousel__item">
-					<div class="carousel__item-img"></div>
-					<div class="carousel__item-name"></div>
-					<div class="carousel__item-nick"></div>
+				<div class="carousel-item">
+					<div class="carousel-item__img"></div>
+					<span class="carousel-item__name"></span>
+					<span class="carousel-item__nick"></span>
+					<p class="carousel-item__text"></p>
+					<span class="carousel-item__visit">2 hours ago</span>
 				</div>
 
-				<div class="carousel__item">
-					<!-- стрелки отдельно -->
-					<div class="carousel__item-arrow-left"></div>
-					<div class="carousel__item-text"></div>
-					<div class="carousel__item-arrow-right"></div>
-				</div>
-				<div class="carousel__item">
-					2 hours ago
-				</div>
 			</div>
 
 			<div class="social-buttons">
 
-				<div class="social-buttons__item">
-					<button class="social-buttons__item-button"></button>
-					<div class="social-buttons__item-text"></div>
+				<div class="social-btn-github">
+					<button class="social-btn-github__button"></button>
+					<div class="social-btn-github__text"></div>
 				</div>
 
-				<div class="social-buttons__item">
-					<button class="social-buttons__item-button"></button>
-					<div class="social-buttons__item-text"></div>
+				<div class="social-btn-twitter">
+					<button class="social-btn-twitter__button"></button>
+					<div class="social-btn-twitter__text"></div>
 				</div>
 
-				<div class="social-buttons__item">
-					<button class="social-buttons__item-button"></button>
-					<div class="social-buttons__item-text"></div>
+				<div class="social-btn-facebook">
+					<button class="social-btn-facebook__button"></button>
+					<div class="social-btn-facebook__text"></div>
 				</div>
 
 			</div>
 		</div>
 	</section>
 
+<!-- with before
+posabs 0 0 0 0
+content ''
+bg-img
+display block
+ -->
 	<section class="people">
-		<!-- with before -->
-		<div class="people__background">
-			<div class="container people__container">
-				<div class="people__heading"></div>
+		<h2 class="section-title"></h2>
+		<div class="container">
+			<div class="clients-list">
 
-				<div class="people__item">
-					<div class="people__item-logo"></div>
-					<div class="people__item-text"></div>
+				<div class="clients-item">
+					<div class="clients-item__logo"></div>
+					<p class="clients-item__text"></p>
 				</div>
 
-				<div class="people__item">
-					<div class="people__item-logo"></div>
-					<!-- p -->
-					<div class="people__item-text"></div>
+				<div class="clients-item">
+					<div class="clients-item__logo"></div>
+					<div class="clients-item__text"></div>
 				</div>
 
-				<div class="people__item">
-					<div class="people__item-logo"></div>
-					<div class="people__item-text"></div>
+				<div class="clients-item">
+					<div class="clients-item__logo"></div>
+					<div class="clients-item__text"></div>
 				</div>
 
-				<div class="people__item">
-					<div class="people__item-logo"></div>
-					<div class="people__item-text"></div>
+				<div class="clients-item">
+					<div class="clients-item__logo"></div>
+					<div class="clients-item__text"></div>
 				</div>
 
-				<div class="people__item">
-					<div class="people__item-logo"></div>
-					<div class="people__item-text"></div>
+				<div class="clients-item">
+					<div class="clients-item__logo"></div>
+					<div class="clients-item__text"></div>
 				</div>
 
-				<div class="people__item">
-					<div class="people__item-logo"></div>
-					<div class="people__item-text"></div>
-				</div>
+				<div class="clients-item">
+					<div class="clients-item__logo"></div>
+					<div class="clients-item__text"></div>
+				</div>				
+			</div>
 
-				<div class="people__desc">
-					<div class="people__desc-text-wrapper">
-						<span class="people__desc-text">
+			<div class="clients-desc">
+				<div class="clients-desc-text-wrapper">
+					<span class="clients-desc__text">
 							
-						</span>
-					</div>
+					</span>
 				</div>
+			</div>
 
 			</div>
-		</div>
+		
 	</section>
 
-	<section class="fork">
+	<section class="price">
 		<div class="container fork__container">
-			<div class="fork__heading"></div>
-			<div class="fork__main-wrapper">
+			<h2 class="section-title"></h2>
+			<div class="price-wrapper">
 				
-				<div class="fork__main-wrapper-item">
-					<div class="fork__main-wrapper-item-heading"></div>
-					<div class="fork__main-wrapper-item-price"></div>
-					<div class="fork__main-wrapper-item-period"></div>
-					<div class="fork__main-wrapper-item-desc"></div>
-					<!-- a -->
-					<a class="fork__main-wrapper-item-button"></a>
+				<div class="price-item">
+					<div class="price-item__heading"></div>
+					<div class="price-item__price"></div>
+					<div class="price-item__period"></div>
+					<div class="price-item__desc"></div>
+					<a class="price-item__button"></a>
 				</div>
 
-				<div class="fork__main-wrapper-item">
-					<div class="fork__main-wrapper-item-heading"></div>
-					<div class="fork__main-wrapper-item-price"></div>
-					<div class="fork__main-wrapper-item-period"></div>
-					<div class="fork__main-wrapper-item-desc"></div>
-					<button class="fork__main-wrapper-item-button"></button>
+				<div class="price-item">
+					<div class="price-item__heading"></div>
+					<div class="price-item__price"></div>
+					<div class="price-item__period"></div>
+					<div class="price-item__desc"></div>
+					<a class="price-item__button"></a>
 				</div>
 
-				<div class="fork__main-wrapper-item">
-					<div class="fork__main-wrapper-item-heading"></div>
-					<div class="fork__main-wrapper-item-price"></div>
-					<div class="fork__main-wrapper-item-period"></div>
-					<div class="fork__main-wrapper-item-desc"></div>
-					<button class="fork__main-wrapper-item-button"></button>
+				<div class="price-item">
+					<div class="price-item__heading"></div>
+					<div class="price-item__price"></div>
+					<div class="price-item__period"></div>
+					<div class="price-item__desc"></div>
+					<a class="price-item__button"></a>
 				</div>
 
-				<div class="fork__main-wrapper-item">
-					<div class="fork__main-wrapper-item-heading"></div>
-					<div class="fork__main-wrapper-item-price"></div>
-					<div class="fork__main-wrapper-item-period"></div>
-					<div class="fork__main-wrapper-item-desc"></div>
-					<button class="fork__main-wrapper-item-button"></button>
+				<div class="price-item">
+					<div class="price-item__heading"></div>
+					<div class="price-item__price"></div>
+					<div class="price-item__period"></div>
+					<div class="price-item__desc"></div>
+					<a class="price-item__button"></a>
 				</div>
 
 			</div>
@@ -232,16 +241,12 @@
 
 	<section class="subscribe">
 		<div class="container subscribe__container">
-			<div class="subscribe__heading"></div>
-			<!-- display none for one -->
-			<div class="subscribe__heading"></div>
-			<form class="subscribe__form">
-				<input type="text" class="subscribe__form-input">
-				<input type="text" class="subscribe__form-input">
-				<button class="button-purple subscribe__form-button">
-					<span class="subscribe__form-button-text"></span>
-					<!-- display none for one -->
-					<span class="subscribe__form-button-text"></span>
+			<h2 class="section-title"></h2>
+			<form class="subscribe-form">
+				<input type="text" class="subscribe-form__input">
+				<input type="text" class="subscribe-form__input">
+				<button class="subscribe-form__btn">
+					
 				</button>
 			</form>
 		</div>
@@ -249,44 +254,37 @@
 
 	<footer class="footer">
 		<div class="container footer__container">
-			<div class="footer__item">
-				<div class="footer__item-logo">
-					<div class="footer__item-logo-img"></div>
-					<span class="footer__item-logo-text-1"></span>
-					<span class="footer__item-logo-text-2"></span>
+			<div class="footer-site">
+				<div class="footer-logo">
+					<div class="footer-logo__img"></div>
+					<span class="footer-logo__name"></span>
+					<span class="footer-logo__desc"></span>
 				</div>
 			</div>
 
-			<div class="footer__item">
-				<div class="footer__item-navigation">
-					<span class="footer__item-navigation-heading"></span>
-					<div class="footer__item-navigation-menu">
-						<a href="" class="footer__item-navigation-menu-item"></a>
-						<a href="" class="footer__item-navigation-menu-item"></a>
-						<a href="" class="footer__item-navigation-menu-item"></a>
-						<a href="" class="footer__item-navigation-menu-item"></a>
-						<a href="" class="footer__item-navigation-menu-item"></a>
-					</div>
+			<div class="footer-nav">
+				<h4 class="footer-nav__heading"></h4>
+				<a href="" class="footer-nav__link"></a>
+				<a href="" class="footer-nav__link"></a>
+				<a href="" class="footer-nav__link"></a>
+				<a href="" class="footer-nav__link"></a>
+				<a href="" class="footer-nav__link"></a>
+			</div>
+
+			<div class="footer-contacts">
+				<div class="contacts-phone">
+					<span class="contacts-phone__number"></span>
+					<span class="contacts-phone__desc"></span>
+				</div>
+				<div class="footer-adress">
+					<h5 class="footer-adress__heading"></h5>
+					<p class="footer-adress__text"></p>
 				</div>
 			</div>
 
-			<div class="footer__item">
-				<div class="footer__item-number">
-					<span class="footer__item-number-text-1"></span>
-					<span class="footer__item-number-text-2"></span>
-				</div>
-				<div class="footer__item-adress">
-					<span class="footer__item-adress-text-1"></span>
-					<div class="footer__item-adress-details">
-						<span class="footer__item-adress-details-text-1"></span>
-						<span class="footer__item-adress-details-text-2"></span>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer__item">
-				<span class="footer__item-info-title"></span>
-				<div class="footer__item-info-text"></div>
+			<div class="footer-info">
+				<h5 class="footer-info__title"></h5>
+				<div class="footer-info__text"></div>
 			</div>
 	
 		</div>
