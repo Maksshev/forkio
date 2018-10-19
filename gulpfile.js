@@ -60,6 +60,15 @@ gulp.task('clean', function () {
     return gulp.src('./dist', {read: false}).pipe(clean());
 });
 
+
+gulp.task('cleanDistCss', function () {
+    return gulp.src('./dist/css', {read: false}).pipe(clean());
+});
+
+gulp.task('cleanSass', function () {
+    runSequence('cleanDistCss', 'sass');
+});
+
 gulp.task('sass', function () {
     return gulp.src('./src/**/*.scss')
         .pipe(plumber({errorHandler: function(err) {
@@ -84,7 +93,7 @@ gulp.task('serve', function () {
     browserSync.init({
         server: './dist'
     });
-    gulp.watch('./src/**/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch('./src/**/*.scss', ['cleanSass']).on('change', browserSync.reload);
     gulp.watch('./src/**/*.js', ['terser']).on('change', browserSync.reload);
     gulp.watch('./src/index.html', ['minhtml']).on('change', browserSync.reload);
 });
