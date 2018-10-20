@@ -11,3 +11,21 @@ button{
   border:none;
   cursor:pointer;
 }
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.container{
+  min-width: 300px;
+  padding-left:10px;
+  padding-right: 10px;
+  height:100%;
+}
+
+@media only screen and (min-width: 973px){
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+  }
+}

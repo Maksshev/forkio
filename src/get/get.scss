@@ -11,13 +11,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-    @media (min-width: 1200px) {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
     .section-title-dark {
       display: block;
       width: 71.9%;
