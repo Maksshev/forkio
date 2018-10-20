@@ -1,0 +1,167 @@
+.services {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  .services__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .section-title-dark {
+      display: block;
+      width: 71.9%;
+      font: {
+        size: 2.001rem;
+        weight: 700;
+      }
+      color: #8d81ac;
+      text-align: center;
+      margin-bottom: 70px;
+      @media (min-width: 993px) {
+        display: none;
+      }
+    }
+    .preference-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      @media (min-width: 481px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+      @media (min-width: 993px) {
+        flex-direction: row;
+      }
+      .preference-image {
+        display: flex;
+        width: 320px;
+        height: 380px;
+        background: url("../img/get-image.png") no-repeat;
+        background-size: cover;
+        align-self: flex-end;
+        position: relative;
+        left: 10%;
+        margin: 0 0 0 0;
+        @media (min-width: 401px) {
+          width: 114%;
+        }
+        @media (min-width: 481px) {
+          height: 520px;
+          margin-bottom: 30px;
+        }
+        @media (min-width: 993px) {
+          align-self: flex-start;
+          width: 50%;
+          height: 604px;
+          margin-top: 160px;
+        }
+        .section-title-dark-submain {
+          display: none;
+          @media (min-width: 993px) {
+            display: block;
+            text-align: left;
+            position: relative;
+            top: -100px;
+            left: 25px;
+            width: 100%;
+            align-self: flex-start;
+          }
+        }
+      }
+      .preference-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        @media (min-width: 993px) {
+          margin-top: 100px;
+          width: 50%;
+        }
+        .preference-item {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @media (min-width: 401px) {
+            justify-content: space-between;
+            flex-direction: row;
+          }
+          .preference-text-container {
+            @media (min-width: 401px) {
+              position: relative;
+              bottom: 30px;
+              width: 68%;
+            }
+            .preference-item__heading {
+              display: block;
+              margin: 30px 0 0 0;
+              @media (min-width: 401px) {
+                text-align: left;
+              }
+              font: {
+                size: 1rem;
+                weight: 400;
+              }
+              color: #323232;
+            }
+            .preference-item__text {
+              font: {
+                family: Lato, sans-serif;
+                size: 0.875rem;
+              }
+              margin: 0 0 40px 0;
+              @media (min-width: 401px) {
+                margin: 20px 0 40px 0;
+                line-height: 1.1rem;
+                text-align: left;
+              }
+              color: #848e97;
+              line-height: 1.6rem;
+            }
+          }
+          .preference-item-img {
+            @media (min-width: 401px) {
+              margin-bottom: auto;
+            }
+          }
+          .preference-item__img-better-web {
+            width: 111px;
+            height: 64px;
+            background: url("../img/get-icon1.png") no-repeat;
+            background-size: cover;
+            margin-left: 30px;
+            @media (min-width: 401px) {
+              margin: 0 0 0 0;
+            }
+          }
+          .preference-item-img__better-web {
+            position: relative;
+            left: 15px;
+            @media (min-width: 401px) {
+              position: static;
+            }
+          }
+          .preference-item-img__experiments {
+            @media (min-width: 401px) {
+              position: relative;
+              left: 15px;
+            }
+          }
+          .preference-item-img__web {
+            @media (min-width: 401px) {
+              position: relative;
+              left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
