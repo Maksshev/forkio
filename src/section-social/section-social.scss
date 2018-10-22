@@ -6,6 +6,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include md {
+    border-bottom: 1px solid #f4f4f4;
+  }
+  @include lg {
+    border-bottom: none;
+  }
   .social__container {
     height: 450px;
     width: calc(100% - 20px);
@@ -17,14 +23,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid red;
       .arrow {
         color: #848e97;
         position: relative;
         top: 20px;
         font-size: 1.5rem;
+        cursor: pointer;
         @include sm {
           top: 45px;
+        }
+        @include lg {
+          top: 0;
         }
       }
       .carousel-item {
@@ -36,6 +45,9 @@
         align-items: center;
         @include sm {
           height: 300px;
+        }
+        @include lg {
+          height: 350px;
         }
         .item-heading {
           width: 100%;
@@ -82,6 +94,7 @@
             flex-direction: column;
             @include sm {
               padding-left: 20px;
+              text-align: left;
             }
             .carousel-item__name {
 
@@ -117,6 +130,83 @@
         }
         .carousel-item__text-nick {
           color: #8d81ac;
+        }
+        .carousel-item__visit {
+          @include lg {
+            display: block;
+            text-align: center;
+            width: 75%;
+            height: 100px;
+            border-bottom: 1px solid #f4f4f4;
+          }
+        }
+      }
+    }
+    .social-buttons {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 50px;
+      @include md {
+        margin: auto;
+        padding-top: 50px;
+        max-width: 520px;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      @include lg {
+        max-width: 900px;
+        flex-wrap: nowrap;
+      }
+      .social-btn {
+        margin-bottom: 30px;
+        text-align: center;
+        .social-btn__github {
+          @include social-btn-s;
+          background-color: #f3f3f3;
+          color: black;
+          @include md {
+            width: 210px;
+          }
+          @include lg {
+            width: 240px;
+          }
+        }
+        .social-btn__twitter {
+          @include social-btn-s;
+          background-color: #26a6d1;
+          @include md {
+            width: 210px;
+          }
+          @include lg {
+            width: 240px;
+          }
+        }
+        .social-btn__facebook {
+          @include social-btn-s;
+          background-color: #3b5998;
+          @include md {
+            width: 210px;
+          }
+          @include lg {
+            width: 240px;
+          }
+        }
+        .social-btn__text {
+          margin-top: 20px;
+          color: #848e97;
+          font-size: 0.875rem;
+        }
+      }
+      .social-btn-center {
+        @include md {
+          margin: 0 auto;
+        }
+        @include lg {
+          margin: -30px 0 0 0;
         }
       }
     }

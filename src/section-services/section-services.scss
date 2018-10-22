@@ -142,13 +142,20 @@
             position: relative;
             left: 15px;
             @include sm {
-              position: static;
+              position: relative;
+              left: 10px;
             }
           }
           .preference-item-img__experiments {
             @include sm {
               position: relative;
               left: 15px;
+            }
+          }
+          .preference-item-img__tools {
+            @include sm {
+              position: relative;
+              left: 5px;
             }
           }
           .preference-item-img__web {
