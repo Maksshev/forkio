@@ -16,6 +16,7 @@
 	padding-top: 50px;
 	background:#4a3b4e;
 	position: relative;
+	overflow: hidden;
 	&::before{
 		content:"";
 		display:block;
