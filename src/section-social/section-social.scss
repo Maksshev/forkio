@@ -9,14 +9,14 @@
 
 
   .social__container {
-    min-height: 450px;
+    min-height: 500px;
     width: calc(100% - 20px);
     @include sm {
       width: calc(100% - 50px);
     }
 
     .carousel {
-      height: 50%;
+      height: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -41,7 +41,7 @@
       }
       .carousel-item {
         width: 100%;
-        height: 350px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -53,6 +53,7 @@
           height: 350px;
         }
         .item-heading {
+          margin-top: 20px;
           width: 100%;
           height: 155px;
           display: flex;
