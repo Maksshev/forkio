@@ -1,0 +1,20 @@
+.subscribe {
+  width: 100%;
+  display: block;
+  position: static;
+  .subscribe__container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    .section-title {
+      font: {
+        size: 1.5rem;
+        weight: 700;
+      }
+      .subscribe-form {
+
+      }
+    }
+  }
+}
+
