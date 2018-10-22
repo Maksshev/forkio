@@ -3,3 +3,4 @@ document.addEventListener('click',function(e) {
 		document.getElementsByClassName('header__navbar-nav')[0].classList.toggle('active')
 	}
 })
+
