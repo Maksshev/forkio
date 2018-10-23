@@ -17,6 +17,7 @@
 	width: 100%;
 	height: 100px;
 	background: #27262a;
+	overflow-x:hidden;
 	&-navbar{
 		display: flex;
 		justify-content: space-between;
