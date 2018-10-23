@@ -62,7 +62,7 @@
 				position: relative;
 				width: 26px;
 				height: 40px;
-				@include flex
+				@include flex;
 				flex-direction: column;
 				&__line{
 					width: 26px;
