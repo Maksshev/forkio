@@ -252,13 +252,11 @@
 			}
 			.header__navbar-nav{
 				position: absolute;
-				bottom: 5px;
+				bottom: 18px;
 				left:0;
 				width: 95%;
 				height: 50px;
-			    align-self: flex-end;
 			    order:2;
-			    @include flex;
 				.toggle-navbar{
 					display:none;
 				}
