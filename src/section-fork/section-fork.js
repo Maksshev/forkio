@@ -1,7 +1,10 @@
-document.addEventListener('click',function(e) {
-	if(e.target.closest('.toggle-navbar')){
-		document.getElementsByClassName('header__navbar-nav')[0].classList.toggle('active');
-		let header = document.getElementsByClassName('header')[0]
-		header.style.overflow = header.style.overflow === 'visible' ? 'hidden' : 'visible';
-	}
+$($('.header__navbar-nav')[0]).click(function(e){
+		$($('.header__navbar-nav')[0]).toggleClass('active');
+		let header = $($('.header')[0])
+		if(header.css('overflow') == 'visible'){
+			header.css('overflow','hidden')
+		}
+		else{
+			header.css('overflow','visible')
+		}
 })
